@@ -1,15 +1,15 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0c5b1d4a-4649-4f3d-a803-fecb66032a66",
+  "serialNumber": "urn:uuid:b0570281-c12c-4a66-9b99-fafd63694d42",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-17T06:32:55.240Z",
+    "timestamp": "2023-05-17T16:32:33.030Z",
     "tools": [
       {
         "vendor": "cyclonedx",
         "name": "cdxgen",
-        "version": "8.4.7"
+        "version": "8.4.9"
       }
     ],
     "authors": [
@@ -17,20 +17,20 @@
         "name": "Prabhu Subramanian",
         "email": "prabhu@appthreat.com"
       }
-    ],
-    "component": {
+    ]
+  },
+  "components": [
+    {
       "publisher": "",
       "group": "",
-      "name": "root",
+      "name": "java-test",
       "version": "latest",
       "description": "",
       "licenses": [],
-      "purl": "pkg:maven/root@latest?type=jar",
+      "purl": "pkg:maven/java-test@latest?type=jar",
       "type": "library",
-      "bom-ref": "pkg:maven/root@latest?type=jar"
-    }
-  },
-  "components": [
+      "bom-ref": "pkg:maven/java-test@latest?type=jar"
+    },
     {
       "publisher": "",
       "group": "org.springframework.boot",
@@ -1706,7 +1706,7 @@
   ],
   "dependencies": [
     {
-      "ref": "pkg:maven/root@latest?type=jar",
+      "ref": "pkg:maven/java-test@latest?type=jar",
       "dependsOn": [
         "pkg:maven/org.springframework.boot/spring-boot-configuration-processor@3.0.6?type=jar",
         "pkg:maven/org.projectlombok/lombok@1.18.26?type=jar",
@@ -1714,28 +1714,7 @@
         "pkg:maven/net.logstash.logback/logstash-logback-encoder@7.3?type=jar",
         "pkg:maven/com.squareup.okhttp3/okhttp@5.0.0-alpha.11?type=jar",
         "pkg:maven/io.opentelemetry/opentelemetry-api@1.26.0?type=jar",
-        "pkg:maven/io.micrometer/micrometer-registry-prometheus@1.11.0?type=jar",
-        "pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.0.6?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-security@3.0.6?type=jar",
-        "pkg:maven/commons-io/commons-io@1.3.2?type=jar",
-        "pkg:maven/org.json/json@20230227?type=jar",
-        "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar",
-        "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
-        "pkg:maven/com.google.guava/guava@31.1-jre?type=jar",
-        "pkg:maven/io.micrometer/micrometer-tracing-bridge-otel@1.1.1?type=jar",
-        "pkg:maven/io.opentelemetry.instrumentation/opentelemetry-jdbc@1.19.2-alpha?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@3.0.6?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar",
-        "pkg:maven/io.grpc/grpc-api@1.55.1?type=jar",
-        "pkg:maven/io.grpc/grpc-services@1.55.1?type=jar",
-        "pkg:maven/io.grpc/grpc-netty@1.55.1?type=jar",
-        "pkg:maven/org.awaitility/awaitility@4.2.0?type=jar",
-        "pkg:maven/org.objenesis/objenesis@3.2?type=jar",
-        "pkg:maven/com.google.code.gson/gson@2.9.1?type=jar",
-        "pkg:maven/com.google.android/annotations@4.1.1.4?type=jar",
-        "pkg:maven/org.codehaus.mojo/animal-sniffer-annotations@1.21?type=jar",
-        "pkg:maven/io.perfmark/perfmark-api@0.25.0?type=jar"
+        "pkg:maven/io.micrometer/micrometer-registry-prometheus@1.11.0?type=jar"
       ]
     },
     {
@@ -1766,12 +1745,7 @@
       "ref": "pkg:maven/io.micrometer/micrometer-registry-prometheus@1.11.0?type=jar",
       "dependsOn": [
         "pkg:maven/ch.qos.logback/logback-core@1.4.7?type=jar",
-        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
-        "pkg:maven/com.squareup.okhttp3/okhttp-jvm@5.0.0-alpha.11?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-context@1.19.0?type=jar",
-        "pkg:maven/io.micrometer/micrometer-core@1.10.6?type=jar",
-        "pkg:maven/io.prometheus/simpleclient_common@0.16.0?type=jar"
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"
       ]
     },
     {
@@ -1780,7 +1754,9 @@
     },
     {
       "ref": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
@@ -1817,7 +1793,9 @@
     },
     {
       "ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/com.squareup.okhttp3/okhttp-jvm@5.0.0-alpha.11?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/com.squareup.okhttp3/okhttp-jvm@5.0.0-alpha.11?type=jar",
@@ -1861,11 +1839,16 @@
     },
     {
       "ref": "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.7.22?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/io.opentelemetry/opentelemetry-context@1.19.0?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/io.opentelemetry/opentelemetry-context@1.19.0?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/io.micrometer/micrometer-core@1.10.6?type=jar",
+        "pkg:maven/io.prometheus/simpleclient_common@0.16.0?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/io.micrometer/micrometer-core@1.10.6?type=jar",
@@ -1892,7 +1875,9 @@
       "ref": "pkg:maven/io.prometheus/simpleclient@0.16.0?type=jar",
       "dependsOn": [
         "pkg:maven/io.prometheus/simpleclient_tracer_otel@0.16.0?type=jar",
-        "pkg:maven/io.prometheus/simpleclient_tracer_otel_agent@0.16.0?type=jar"
+        "pkg:maven/io.prometheus/simpleclient_tracer_otel_agent@0.16.0?type=jar",
+        "pkg:maven/org.aspectj/aspectjweaver@1.9.19?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.0.6?type=jar"
       ]
     },
     {
@@ -1919,7 +1904,8 @@
         "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
         "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.0.6?type=jar",
         "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.0.6?type=jar",
-        "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar"
+        "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-security@3.0.6?type=jar"
       ]
     },
     {
@@ -2041,7 +2027,10 @@
       "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-security@3.0.6?type=jar",
       "dependsOn": [
         "pkg:maven/org.springframework.security/spring-security-config@6.0.3?type=jar",
-        "pkg:maven/org.springframework.security/spring-security-web@6.0.3?type=jar"
+        "pkg:maven/org.springframework.security/spring-security-web@6.0.3?type=jar",
+        "pkg:maven/commons-io/commons-io@1.3.2?type=jar",
+        "pkg:maven/org.json/json@20230227?type=jar",
+        "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar"
       ]
     },
     {
@@ -2076,7 +2065,9 @@
       "ref": "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar",
       "dependsOn": [
         "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar",
-        "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar"
+        "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar",
+        "pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar",
+        "pkg:maven/com.google.guava/guava@31.1-jre?type=jar"
       ]
     },
     {
@@ -2099,7 +2090,8 @@
         "pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar",
         "pkg:maven/org.checkerframework/checker-qual@3.12.0?type=jar",
         "pkg:maven/com.google.errorprone/error_prone_annotations@2.11.0?type=jar",
-        "pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar"
+        "pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar",
+        "pkg:maven/io.micrometer/micrometer-tracing-bridge-otel@1.1.1?type=jar"
       ]
     },
     {
@@ -2135,7 +2127,9 @@
         "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.19.0?type=jar",
         "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.19.0?type=jar",
         "pkg:maven/io.opentelemetry.instrumentation/opentelemetry-instrumentation-api-semconv@1.24.0-alpha?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-extension-trace-propagators@1.19.0?type=jar"
+        "pkg:maven/io.opentelemetry/opentelemetry-extension-trace-propagators@1.19.0?type=jar",
+        "pkg:maven/io.opentelemetry.instrumentation/opentelemetry-jdbc@1.19.2-alpha?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@3.0.6?type=jar"
       ]
     },
     {
@@ -2196,22 +2190,21 @@
     {
       "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@3.0.6?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.0.6?type=jar",
-        "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.0.6?type=jar"
       ]
     },
     {
       "ref": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.0.6?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework.boot/spring-boot-actuator@3.0.6?type=jar",
-        "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?type=jar",
-        "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?type=jar",
-        "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.19.0-alpha?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot-actuator@3.0.6?type=jar"
       ]
     },
     {
       "ref": "pkg:maven/org.springframework.boot/spring-boot-actuator@3.0.6?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?type=jar",
+        "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?type=jar",
@@ -2219,7 +2212,9 @@
     },
     {
       "ref": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.19.0-alpha?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.19.0-alpha?type=jar",
@@ -2229,7 +2224,10 @@
     },
     {
       "ref": "pkg:maven/io.opentelemetry/opentelemetry-api-logs@1.19.0-alpha?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0?type=jar",
@@ -2249,7 +2247,8 @@
         "pkg:maven/org.mockito/mockito-junit-jupiter@4.8.1?type=jar",
         "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
         "pkg:maven/org.springframework/spring-test@6.0.8?type=jar",
-        "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar"
+        "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+        "pkg:maven/io.grpc/grpc-api@1.55.1?type=jar"
       ]
     },
     {
@@ -2372,7 +2371,8 @@
     {
       "ref": "pkg:maven/io.grpc/grpc-api@1.55.1?type=jar",
       "dependsOn": [
-        "pkg:maven/io.grpc/grpc-context@1.55.1?type=jar"
+        "pkg:maven/io.grpc/grpc-context@1.55.1?type=jar",
+        "pkg:maven/io.grpc/grpc-services@1.55.1?type=jar"
       ]
     },
     {
@@ -2384,7 +2384,8 @@
       "dependsOn": [
         "pkg:maven/io.grpc/grpc-protobuf@1.55.1?type=jar",
         "pkg:maven/io.grpc/grpc-stub@1.55.1?type=jar",
-        "pkg:maven/io.grpc/grpc-core@1.55.1?type=jar"
+        "pkg:maven/io.grpc/grpc-core@1.55.1?type=jar",
+        "pkg:maven/io.grpc/grpc-netty@1.55.1?type=jar"
       ]
     },
     {
@@ -2429,7 +2430,10 @@
         "pkg:maven/io.netty/netty-transport@4.1.91.Final?type=jar",
         "pkg:maven/io.netty/netty-codec@4.1.91.Final?type=jar",
         "pkg:maven/io.netty/netty-handler@4.1.91.Final?type=jar",
-        "pkg:maven/io.netty/netty-codec-http@4.1.91.Final?type=jar"
+        "pkg:maven/io.netty/netty-codec-http@4.1.91.Final?type=jar",
+        "pkg:maven/org.awaitility/awaitility@4.2.0?type=jar",
+        "pkg:maven/org.objenesis/objenesis@3.2?type=jar",
+        "pkg:maven/com.google.protobuf/protobuf-java-util@3.22.3?type=jar"
       ]
     },
     {
@@ -2485,7 +2489,12 @@
     },
     {
       "ref": "pkg:maven/org.objenesis/objenesis@3.2?type=jar",
-      "dependsOn": []
+      "dependsOn": [
+        "pkg:maven/com.google.code.gson/gson@2.9.1?type=jar",
+        "pkg:maven/com.google.android/annotations@4.1.1.4?type=jar",
+        "pkg:maven/org.codehaus.mojo/animal-sniffer-annotations@1.21?type=jar",
+        "pkg:maven/io.perfmark/perfmark-api@0.25.0?type=jar"
+      ]
     },
     {
       "ref": "pkg:maven/com.google.code.gson/gson@2.9.1?type=jar",
@@ -2505,12 +2514,7 @@
     },
     {
       "ref": "pkg:maven/com.google.protobuf/protobuf-java-util@3.22.3?type=jar",
-      "dependsOn": []
-    },
-    {
-      "ref": "undefined",
       "dependsOn": [
-        "pkg:maven/com.google.protobuf/protobuf-java-util@3.22.3?type=jar",
         "pkg:maven/io.netty/netty-handler-proxy@4.1.91.Final?type=jar"
       ]
     },
