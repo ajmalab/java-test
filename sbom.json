@@ -1,15 +1,15 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:911bc2a0-1a3d-428c-b1b8-86e9fa63ca80",
+  "serialNumber": "urn:uuid:5c135be6-c42b-4a77-aa0d-f3b2e3d1d72f",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-30T17:51:57.657Z",
+    "timestamp": "2023-07-26T15:25:22.956Z",
     "tools": [
       {
         "vendor": "cyclonedx",
         "name": "cdxgen",
-        "version": "8.4.13"
+        "version": "9.2.2"
       }
     ],
     "authors": [
@@ -19,15 +19,10 @@
       }
     ],
     "component": {
-      "publisher": "",
-      "group": "com.ajmalab.demo",
       "name": "java-test",
-      "version": "latest",
-      "description": "",
-      "licenses": [],
-      "purl": "pkg:application/com.ajmalab.demo/java-test@latest?type=jar",
       "type": "application",
-      "bom-ref": "pkg:application/com.ajmalab.demo/java-test@latest?type=jar",
+      "group": "com.ajmalab.demo",
+      "version": "latest",
       "properties": [
         {
           "name": "buildFile",
@@ -42,34 +37,14 @@
           "value": "/Users/Ajmal.Kottilingal/dev/java-test"
         }
       ],
-      "components": [
-        {
-          "name": "java-test",
-          "type": "application",
-          "group": "com.ajmalab.demo",
-          "version": "latest",
-          "properties": [
-            {
-              "name": "buildFile",
-              "value": "/Users/Ajmal.Kottilingal/dev/java-test/build.gradle"
-            },
-            {
-              "name": "projectDir",
-              "value": "/Users/Ajmal.Kottilingal/dev/java-test"
-            },
-            {
-              "name": "rootDir",
-              "value": "/Users/Ajmal.Kottilingal/dev/java-test"
-            }
-          ],
-          "purl": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
-          "bom-ref": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar"
-        }
-      ]
+      "purl": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
+      "bom-ref": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
+      "components": []
     }
   },
   "components": [
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-configuration-processor",
@@ -87,6 +62,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.projectlombok",
       "name": "lombok",
@@ -104,6 +80,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "ch.qos.logback",
       "name": "logback-classic",
@@ -121,6 +98,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "net.logstash.logback",
       "name": "logstash-logback-encoder",
@@ -138,6 +116,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.squareup.okhttp3",
       "name": "okhttp",
@@ -155,6 +134,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-api",
@@ -172,6 +152,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "micrometer-registry-prometheus",
@@ -189,6 +170,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "ch.qos.logback",
       "name": "logback-core",
@@ -206,6 +188,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.slf4j",
       "name": "slf4j-api",
@@ -223,6 +206,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-databind",
@@ -240,6 +224,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-annotations",
@@ -257,6 +242,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson",
       "name": "jackson-bom",
@@ -274,6 +260,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
@@ -291,6 +278,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jdk8",
@@ -308,6 +296,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jsr310",
@@ -325,6 +314,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.fasterxml.jackson.module",
       "name": "jackson-module-parameter-names",
@@ -342,6 +332,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.squareup.okhttp3",
       "name": "okhttp-jvm",
@@ -359,6 +350,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.squareup.okio",
       "name": "okio",
@@ -376,6 +368,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.squareup.okio",
       "name": "okio-jvm",
@@ -393,6 +386,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.jetbrains.kotlin",
       "name": "kotlin-stdlib-jdk8",
@@ -410,6 +404,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.jetbrains.kotlin",
       "name": "kotlin-stdlib",
@@ -427,6 +422,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.jetbrains.kotlin",
       "name": "kotlin-stdlib-common",
@@ -444,6 +440,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.jetbrains",
       "name": "annotations",
@@ -461,6 +458,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.jetbrains.kotlin",
       "name": "kotlin-stdlib-jdk7",
@@ -478,6 +476,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-context",
@@ -495,6 +494,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "micrometer-core",
@@ -512,6 +512,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "micrometer-commons",
@@ -529,6 +530,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "micrometer-observation",
@@ -546,6 +548,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.prometheus",
       "name": "simpleclient_common",
@@ -563,6 +566,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.prometheus",
       "name": "simpleclient",
@@ -580,6 +584,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.prometheus",
       "name": "simpleclient_tracer_otel",
@@ -597,6 +602,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.prometheus",
       "name": "simpleclient_tracer_common",
@@ -614,6 +620,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.prometheus",
       "name": "simpleclient_tracer_otel_agent",
@@ -631,6 +638,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.aspectj",
       "name": "aspectjweaver",
@@ -648,6 +656,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-web",
@@ -665,6 +674,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter",
@@ -682,6 +692,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot",
@@ -699,6 +710,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-core",
@@ -716,6 +728,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-jcl",
@@ -733,6 +746,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-context",
@@ -750,6 +764,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-aop",
@@ -767,6 +782,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-beans",
@@ -784,6 +800,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-expression",
@@ -801,6 +818,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-autoconfigure",
@@ -818,6 +836,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-logging",
@@ -835,6 +854,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.logging.log4j",
       "name": "log4j-to-slf4j",
@@ -852,6 +872,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.logging.log4j",
       "name": "log4j-api",
@@ -869,6 +890,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.slf4j",
       "name": "jul-to-slf4j",
@@ -886,6 +908,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "jakarta.annotation",
       "name": "jakarta.annotation-api",
@@ -903,6 +926,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.yaml",
       "name": "snakeyaml",
@@ -920,6 +944,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-json",
@@ -937,6 +962,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-web",
@@ -954,6 +980,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-tomcat",
@@ -971,6 +998,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.tomcat.embed",
       "name": "tomcat-embed-core",
@@ -988,6 +1016,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.tomcat.embed",
       "name": "tomcat-embed-el",
@@ -1005,6 +1034,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.tomcat.embed",
       "name": "tomcat-embed-websocket",
@@ -1022,6 +1052,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-webmvc",
@@ -1039,6 +1070,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-security",
@@ -1056,6 +1088,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.security",
       "name": "spring-security-config",
@@ -1073,6 +1106,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.security",
       "name": "spring-security-core",
@@ -1090,6 +1124,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.security",
       "name": "spring-security-crypto",
@@ -1107,6 +1142,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.security",
       "name": "spring-security-web",
@@ -1124,6 +1160,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "commons-io",
       "name": "commons-io",
@@ -1141,6 +1178,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.json",
       "name": "json",
@@ -1158,6 +1196,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.httpcomponents.client5",
       "name": "httpclient5",
@@ -1175,6 +1214,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.httpcomponents.core5",
       "name": "httpcore5",
@@ -1192,6 +1232,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.httpcomponents.core5",
       "name": "httpcore5-h2",
@@ -1209,6 +1250,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apache.commons",
       "name": "commons-lang3",
@@ -1226,6 +1268,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.guava",
       "name": "guava",
@@ -1243,6 +1286,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.guava",
       "name": "failureaccess",
@@ -1260,6 +1304,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.guava",
       "name": "listenablefuture",
@@ -1277,6 +1322,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.code.findbugs",
       "name": "jsr305",
@@ -1294,6 +1340,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.checkerframework",
       "name": "checker-qual",
@@ -1311,6 +1358,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.errorprone",
       "name": "error_prone_annotations",
@@ -1328,6 +1376,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.j2objc",
       "name": "j2objc-annotations",
@@ -1345,6 +1394,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "micrometer-tracing-bridge-otel",
@@ -1362,6 +1412,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "micrometer-tracing",
@@ -1379,6 +1430,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.micrometer",
       "name": "context-propagation",
@@ -1396,6 +1448,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "aopalliance",
       "name": "aopalliance",
@@ -1413,6 +1466,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-semconv",
@@ -1430,6 +1484,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-sdk-common",
@@ -1447,6 +1502,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-sdk-trace",
@@ -1464,6 +1520,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-sdk",
@@ -1481,6 +1538,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-sdk-metrics",
@@ -1498,6 +1556,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry.instrumentation",
       "name": "opentelemetry-instrumentation-api-semconv",
@@ -1515,6 +1574,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry.instrumentation",
       "name": "opentelemetry-instrumentation-api",
@@ -1532,6 +1592,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-extension-trace-propagators",
@@ -1549,6 +1610,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry.instrumentation",
       "name": "opentelemetry-jdbc",
@@ -1566,6 +1628,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-actuator",
@@ -1583,6 +1646,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-actuator-autoconfigure",
@@ -1600,6 +1664,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-actuator",
@@ -1617,6 +1682,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.hdrhistogram",
       "name": "HdrHistogram",
@@ -1634,6 +1700,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.latencyutils",
       "name": "LatencyUtils",
@@ -1651,6 +1718,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-sdk-logs",
@@ -1668,6 +1736,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.opentelemetry",
       "name": "opentelemetry-api-logs",
@@ -1685,6 +1754,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.errorprone",
       "name": "error_prone_annotations",
@@ -1703,6 +1773,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-test",
@@ -1721,6 +1792,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-test",
@@ -1739,6 +1811,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework.boot",
       "name": "spring-boot-test-autoconfigure",
@@ -1757,6 +1830,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.jayway.jsonpath",
       "name": "json-path",
@@ -1775,6 +1849,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "net.minidev",
       "name": "json-smart",
@@ -1793,6 +1868,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "net.minidev",
       "name": "accessors-smart",
@@ -1811,6 +1887,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.ow2.asm",
       "name": "asm",
@@ -1829,6 +1906,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "jakarta.xml.bind",
       "name": "jakarta.xml.bind-api",
@@ -1847,6 +1925,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "jakarta.activation",
       "name": "jakarta.activation-api",
@@ -1865,6 +1944,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.assertj",
       "name": "assertj-core",
@@ -1883,6 +1963,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "net.bytebuddy",
       "name": "byte-buddy",
@@ -1901,6 +1982,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.hamcrest",
       "name": "hamcrest",
@@ -1919,6 +2001,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit.jupiter",
       "name": "junit-jupiter",
@@ -1937,6 +2020,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit",
       "name": "junit-bom",
@@ -1955,6 +2039,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit.jupiter",
       "name": "junit-jupiter-api",
@@ -1973,6 +2058,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit.jupiter",
       "name": "junit-jupiter-params",
@@ -1991,6 +2077,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit.platform",
       "name": "junit-platform-commons",
@@ -2009,6 +2096,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.opentest4j",
       "name": "opentest4j",
@@ -2027,6 +2115,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.apiguardian",
       "name": "apiguardian-api",
@@ -2045,6 +2134,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.mockito",
       "name": "mockito-core",
@@ -2063,6 +2153,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "net.bytebuddy",
       "name": "byte-buddy-agent",
@@ -2081,6 +2172,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.mockito",
       "name": "mockito-junit-jupiter",
@@ -2099,6 +2191,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.skyscreamer",
       "name": "jsonassert",
@@ -2117,6 +2210,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.springframework",
       "name": "spring-test",
@@ -2135,6 +2229,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.xmlunit",
       "name": "xmlunit-core",
@@ -2153,6 +2248,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.github.tomakehurst",
       "name": "wiremock-jre8-standalone",
@@ -2171,6 +2267,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-api",
@@ -2189,6 +2286,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-context",
@@ -2207,6 +2305,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-services",
@@ -2225,6 +2324,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-protobuf",
@@ -2243,6 +2343,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.protobuf",
       "name": "protobuf-java",
@@ -2261,6 +2362,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.api.grpc",
       "name": "proto-google-common-protos",
@@ -2279,6 +2381,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-protobuf-lite",
@@ -2297,6 +2400,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-stub",
@@ -2315,6 +2419,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-core",
@@ -2333,6 +2438,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.grpc",
       "name": "grpc-netty",
@@ -2351,6 +2457,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-codec-http2",
@@ -2369,6 +2476,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-common",
@@ -2387,6 +2495,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-buffer",
@@ -2405,6 +2514,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-transport",
@@ -2423,6 +2533,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-resolver",
@@ -2441,6 +2552,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-codec",
@@ -2459,6 +2571,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-handler",
@@ -2477,6 +2590,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-transport-native-unix-common",
@@ -2495,6 +2609,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-codec-http",
@@ -2513,6 +2628,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.awaitility",
       "name": "awaitility",
@@ -2531,6 +2647,26 @@
       ]
     },
     {
+      "author": "",
+      "publisher": "",
+      "group": "com.github.tomakehurst",
+      "name": "wiremock-jre8-standalone",
+      "version": "2.35.+",
+      "description": "",
+      "scope": "optional",
+      "licenses": [],
+      "purl": "pkg:maven/com.github.tomakehurst/wiremock-jre8-standalone@2.35.+?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/com.github.tomakehurst/wiremock-jre8-standalone@2.35.+?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "testImplementation"
+        }
+      ]
+    },
+    {
+      "author": "",
       "publisher": "",
       "group": "org.junit.jupiter",
       "name": "junit-jupiter-engine",
@@ -2549,6 +2685,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit.platform",
       "name": "junit-platform-engine",
@@ -2567,6 +2704,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.objenesis",
       "name": "objenesis",
@@ -2585,6 +2723,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.code.gson",
       "name": "gson",
@@ -2603,6 +2742,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.android",
       "name": "annotations",
@@ -2621,6 +2761,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.codehaus.mojo",
       "name": "animal-sniffer-annotations",
@@ -2639,6 +2780,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.perfmark",
       "name": "perfmark-api",
@@ -2657,6 +2799,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "com.google.protobuf",
       "name": "protobuf-java-util",
@@ -2675,6 +2818,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-handler-proxy",
@@ -2693,6 +2837,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "io.netty",
       "name": "netty-codec-socks",
@@ -2711,6 +2856,7 @@
       ]
     },
     {
+      "author": "",
       "publisher": "",
       "group": "org.junit.jupiter",
       "name": "junit-jupiter-engine",
@@ -2727,13 +2873,31 @@
           "value": "testRuntimeOnly"
         }
       ]
+    },
+    {
+      "author": "",
+      "publisher": "",
+      "group": "",
+      "name": "gradle",
+      "version": "wrapper",
+      "description": "",
+      "licenses": [],
+      "purl": "pkg:maven/gradle@wrapper",
+      "type": "library",
+      "bom-ref": "pkg:maven/gradle@wrapper",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "gradle-wrapper.jar"
+        }
+      ]
     }
   ],
+  "services": [],
   "dependencies": [
     {
       "ref": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
       "dependsOn": [
-        "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
         "pkg:maven/org.springframework.boot/spring-boot-configuration-processor@3.0.6?type=jar",
         "pkg:maven/org.projectlombok/lombok@1.18.26?type=jar",
         "pkg:maven/ch.qos.logback/logback-classic@1.4.7?type=jar",
@@ -2752,6 +2916,83 @@
         "pkg:maven/io.micrometer/micrometer-tracing-bridge-otel@1.1.1?type=jar",
         "pkg:maven/io.opentelemetry.instrumentation/opentelemetry-jdbc@1.19.2-alpha?type=jar",
         "pkg:maven/org.springframework.boot/spring-boot-starter-actuator@3.0.6?type=jar",
+        "pkg:maven/ch.qos.logback/logback-core@1.4.7?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.14.2?type=jar",
+        "pkg:maven/com.squareup.okhttp3/okhttp-jvm@5.0.0-alpha.11?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-context@1.19.0?type=jar",
+        "pkg:maven/io.micrometer/micrometer-core@1.10.6?type=jar",
+        "pkg:maven/io.prometheus/simpleclient_common@0.16.0?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.0.6?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-webmvc@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-aop@6.0.8?type=jar",
+        "pkg:maven/org.springframework.security/spring-security-config@6.0.3?type=jar",
+        "pkg:maven/org.springframework.security/spring-security-web@6.0.3?type=jar",
+        "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar",
+        "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar",
+        "pkg:maven/com.google.guava/failureaccess@1.0.1?type=jar",
+        "pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid-conflict-with-guava?type=jar",
+        "pkg:maven/com.google.code.findbugs/jsr305@3.0.2?type=jar",
+        "pkg:maven/org.checkerframework/checker-qual@3.12.0?type=jar",
+        "pkg:maven/com.google.errorprone/error_prone_annotations@2.11.0?type=jar",
+        "pkg:maven/com.google.j2objc/j2objc-annotations@1.3?type=jar",
+        "pkg:maven/io.micrometer/micrometer-tracing@1.0.4?type=jar",
+        "pkg:maven/io.micrometer/micrometer-observation@1.10.6?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-semconv@1.25.0-alpha?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-sdk-common@1.19.0?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-sdk-trace@1.19.0?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-sdk@1.19.0?type=jar",
+        "pkg:maven/io.opentelemetry.instrumentation/opentelemetry-instrumentation-api-semconv@1.24.0-alpha?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-extension-trace-propagators@1.19.0?type=jar",
+        "pkg:maven/io.opentelemetry.instrumentation/opentelemetry-instrumentation-api@1.24.0?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.0.6?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.14.2?type=jar",
+        "pkg:maven/com.squareup.okio/okio@3.2.0?type=jar",
+        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib@1.7.22?type=jar",
+        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-common@1.7.22?type=jar",
+        "pkg:maven/io.micrometer/micrometer-commons@1.10.6?type=jar",
+        "pkg:maven/io.prometheus/simpleclient@0.16.0?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.0.6?type=jar",
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.8?type=jar",
+        "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.14.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.14.2?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.8?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.8?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.8?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.8?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.8?type=jar",
+        "pkg:maven/org.springframework.security/spring-security-core@6.0.3?type=jar",
+        "pkg:maven/io.micrometer/context-propagation@1.0.2?type=jar",
+        "pkg:maven/aopalliance/aopalliance@1.0?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-sdk-metrics@1.19.0?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-actuator@3.0.6?type=jar",
+        "pkg:maven/com.squareup.okio/okio-jvm@3.2.0?type=jar",
+        "pkg:maven/org.jetbrains/annotations@13.0?type=jar",
+        "pkg:maven/io.prometheus/simpleclient_tracer_otel@0.16.0?type=jar",
+        "pkg:maven/io.prometheus/simpleclient_tracer_otel_agent@0.16.0?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.19.0?type=jar",
+        "pkg:maven/org.slf4j/jul-to-slf4j@2.0.7?type=jar",
+        "pkg:maven/org.springframework/spring-jcl@6.0.8?type=jar",
+        "pkg:maven/org.springframework.security/spring-security-crypto@6.0.3?type=jar",
+        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk8@1.7.22?type=jar",
+        "pkg:maven/io.prometheus/simpleclient_tracer_common@0.16.0?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.19.0?type=jar",
+        "pkg:maven/org.jetbrains.kotlin/kotlin-stdlib-jdk7@1.7.22?type=jar",
+        "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?type=jar",
+        "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-sdk-logs@1.19.0-alpha?type=jar",
+        "pkg:maven/io.opentelemetry/opentelemetry-api-logs@1.19.0-alpha?type=jar",
         "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.0.6?type=jar",
         "pkg:maven/com.github.tomakehurst/wiremock-jre8-standalone@2.35.0?type=jar",
         "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
@@ -2763,7 +3004,54 @@
         "pkg:maven/io.grpc/grpc-netty@1.55.1?type=jar",
         "pkg:maven/com.google.protobuf/protobuf-java@4.0.0-rc-2?type=jar",
         "pkg:maven/org.awaitility/awaitility@4.2.0?type=jar",
-        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.0-M1?type=jar"
+        "pkg:maven/com.google.errorprone/error_prone_annotations@2.18.0?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.0.6?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.0.6?type=jar",
+        "pkg:maven/com.jayway.jsonpath/json-path@2.7.0?type=jar",
+        "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.0?type=jar",
+        "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.2?type=jar",
+        "pkg:maven/org.mockito/mockito-core@4.8.1?type=jar",
+        "pkg:maven/org.mockito/mockito-junit-jupiter@4.8.1?type=jar",
+        "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.0.8?type=jar",
+        "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.12.23?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0-M1?type=jar",
+        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.2?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/io.grpc/grpc-context@1.55.1?type=jar",
+        "pkg:maven/io.grpc/grpc-protobuf@1.55.1?type=jar",
+        "pkg:maven/io.grpc/grpc-core@1.55.1?type=jar",
+        "pkg:maven/io.netty/netty-codec-http2@4.1.91.Final?type=jar",
+        "pkg:maven/net.minidev/json-smart@2.4.10?type=jar",
+        "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.1?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.23?type=jar",
+        "pkg:maven/com.google.api.grpc/proto-google-common-protos@2.9.0?type=jar",
+        "pkg:maven/io.grpc/grpc-protobuf-lite@1.55.1?type=jar",
+        "pkg:maven/io.netty/netty-common@4.1.91.Final?type=jar",
+        "pkg:maven/io.netty/netty-buffer@4.1.91.Final?type=jar",
+        "pkg:maven/io.netty/netty-transport@4.1.91.Final?type=jar",
+        "pkg:maven/io.netty/netty-codec@4.1.91.Final?type=jar",
+        "pkg:maven/io.netty/netty-handler@4.1.91.Final?type=jar",
+        "pkg:maven/io.netty/netty-codec-http@4.1.91.Final?type=jar",
+        "pkg:maven/net.minidev/accessors-smart@2.4.9?type=jar",
+        "pkg:maven/io.netty/netty-resolver@4.1.91.Final?type=jar",
+        "pkg:maven/io.netty/netty-transport-native-unix-common@4.1.91.Final?type=jar",
+        "pkg:maven/org.ow2.asm/asm@9.3?type=jar",
+        "pkg:maven/com.github.tomakehurst/wiremock-jre8-standalone@2.35.+?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.0-M1?type=jar",
+        "pkg:maven/com.google.protobuf/protobuf-java-util@3.22.3?type=jar",
+        "pkg:maven/io.netty/netty-handler-proxy@4.1.91.Final?type=jar",
+        "pkg:maven/io.perfmark/perfmark-api@0.25.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar",
+        "pkg:maven/org.objenesis/objenesis@3.2?type=jar",
+        "pkg:maven/com.google.code.gson/gson@2.9.1?type=jar",
+        "pkg:maven/com.google.android/annotations@4.1.1.4?type=jar",
+        "pkg:maven/org.codehaus.mojo/animal-sniffer-annotations@1.21?type=jar",
+        "pkg:maven/io.netty/netty-codec-socks@4.1.91.Final?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.2?type=jar"
       ]
     },
     {
@@ -3727,6 +4015,10 @@
       ]
     },
     {
+      "ref": "pkg:maven/com.github.tomakehurst/wiremock-jre8-standalone@2.35.+?type=jar",
+      "dependsOn": []
+    },
+    {
       "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.10.0-M1?type=jar",
       "dependsOn": [
         "pkg:maven/org.junit/junit-bom@5.10.0-M1?type=jar",
@@ -3800,18 +4092,6 @@
         "pkg:maven/org.junit.platform/junit-platform-engine@1.9.2?type=jar",
         "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.10.0-M1?type=jar"
       ]
-    }
-  ],
-  "externalReferences": [
-    {
-      "type": "other",
-      "url": ".",
-      "comment": "Base path"
-    },
-    {
-      "type": "other",
-      "url": "/Users/Ajmal.Kottilingal/dev/java-test/build.gradle",
-      "comment": "Package file"
     }
   ]
 }
