@@ -13,3 +13,4 @@ plugins {
 }
 
 rootProject.name = 'java-test'
+include 'java-test'
