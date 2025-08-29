@@ -1,0 +1,215 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:82f2d150-944e-4be2-9bc6-507e79a20970",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-08-29T14:12:15Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "12.0.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@12.0.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@12.0.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      ]
+    },
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "lifecycles": [
+      {
+        "phase": "build"
+      }
+    ],
+    "component": {
+      "name": "java-test",
+      "type": "application",
+      "group": "com.ajmalab.demo",
+      "version": "latest",
+      "properties": [
+        {
+          "name": "GradleModule",
+          "value": "java-test"
+        },
+        {
+          "name": "buildFile",
+          "value": "/Users/ajmal.kottilingal/dev/java-test/build.gradle"
+        },
+        {
+          "name": "projectDir",
+          "value": "/Users/ajmal.kottilingal/dev/java-test"
+        },
+        {
+          "name": "rootDir",
+          "value": "/Users/ajmal.kottilingal/dev/java-test"
+        }
+      ],
+      "purl": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
+      "bom-ref": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar"
+    },
+    "properties": [
+      {
+        "name": "cdx:bom:componentTypes",
+        "value": "maven"
+      },
+      {
+        "name": "cdx:bom:componentNamespaces",
+        "value": "org.apache.httpcomponents.client5\\norg.apache.httpcomponents.core5\\norg.slf4j"
+      }
+    ]
+  },
+  "components": [
+    {
+      "group": "org.apache.httpcomponents.client5",
+      "name": "httpclient5",
+      "version": "5.2.1",
+      "purl": "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "compileClasspath"
+        },
+        {
+          "name": "cdx:gradle:GradleRootPath",
+          "value": "./"
+        }
+      ],
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "org.apache.httpcomponents.core5",
+      "name": "httpcore5",
+      "version": "5.1.5",
+      "purl": "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "compileClasspath"
+        },
+        {
+          "name": "cdx:gradle:GradleRootPath",
+          "value": "./"
+        }
+      ],
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "org.apache.httpcomponents.core5",
+      "name": "httpcore5-h2",
+      "version": "5.1.5",
+      "purl": "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "compileClasspath"
+        },
+        {
+          "name": "cdx:gradle:GradleRootPath",
+          "value": "./"
+        }
+      ],
+      "tags": [
+        "framework"
+      ]
+    },
+    {
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.7",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "compileClasspath"
+        },
+        {
+          "name": "cdx:gradle:GradleRootPath",
+          "value": "./"
+        }
+      ],
+      "tags": [
+        "framework"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.httpcomponents.client5/httpclient5@5.2.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar",
+        "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.httpcomponents.core5/httpcore5-h2@5.1.5?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apache.httpcomponents.core5/httpcore5@5.1.5?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/slf4j-api@2.0.7?type=jar",
+      "dependsOn": []
+    }
+  ],
+  "annotations": [
+    {
+      "bom-ref": "metadata-annotations",
+      "subjects": [
+        "pkg:maven/com.ajmalab.demo/java-test@latest?type=jar"
+      ],
+      "annotator": {
+        "component": {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "12.0.0",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@12.0.0",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@12.0.0",
+          "publisher": "OWASP Foundation",
+          "authors": [
+            {
+              "name": "OWASP Foundation"
+            }
+          ]
+        }
+      },
+      "timestamp": "2025-08-29T14:12:15Z",
+      "text": "This Software Bill-of-Materials (SBOM) document was created on Friday, August 29, 2025 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named 'java-test'. There are 4 components. The package type in this SBOM is maven with 3 purl namespaces described under components."
+    }
+  ]
+}
